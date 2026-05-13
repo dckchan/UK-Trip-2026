@@ -20,6 +20,8 @@
 [data-theme="dark"] .map-filter-bar{background:var(--c);border-color:var(--b)}
 [data-theme="dark"] .mtype-bar{background:rgba(22,33,62,.97)}
 [data-theme="dark"] footer{background:var(--c);border-top-color:var(--b)}
+[data-theme="dark"] #bookingsCard{background:linear-gradient(135deg,rgba(198,40,40,.08),var(--c));border-color:#c62828}
+[data-theme="dark"] #bookingsList>div{background:var(--c2);border-color:var(--b)}
 [data-theme="dark"] .idh.london{background:linear-gradient(135deg,#1a4b8c,#0f3460)}
 [data-theme="dark"] .idh.cruise{background:linear-gradient(135deg,#0f3460,#01579b)}
 [data-theme="dark"] .ba-tag{background:#1a3a6c}
@@ -325,6 +327,112 @@ footer{text-align:center;padding:.5rem;color:var(--t3);font-size:.68rem;border-t
 <tr class="disembark"><td>18</td><td>Sep 18</td><td>🏴 Southampton, UK</td><td>6:00 AM</td><td>—</td></tr></table></div>
 <div class="concert-box"><h3><i class="fas fa-music"></i> Concert</h3><div class="artist">🎻 André Rieu</div><p style="font-size:.85rem"><b>Johann Strauss Orchestra</b> · OVO Arena Wembley · Sep 18 · 7:30–10:30 PM</p></div>
 <div id="oSumB" class="cd" style="display:none"><h3><i class="fas fa-info-circle"></i> Summary</h3><div id="oSumC"></div></div>
+<!-- BOOKINGS REQUIRED -->
+<div class="cd" style="border:2px solid #ea4335;background:linear-gradient(135deg,#fff5f5,#fff);margin-bottom:.6rem" id="bookingsCard">
+  <h3 style="color:#c62828;margin-bottom:.35rem;display:flex;align-items:center;gap:.25rem"><i class="fas fa-calendar-check" style="font-size:.85rem"></i> Bookings Required</h3>
+  <p style="font-size:.73rem;color:var(--t2);margin-bottom:.4rem">These events from the itinerary are marked with a <span style="display:inline-block;border:2px solid #ea4335;border-radius:3px;padding:0 .2rem;font-size:.65rem;font-weight:700;color:#ea4335">RED BOX</span> in the planning spreadsheet and require advance reservation.</p>
+  <div style="display:flex;flex-direction:column;gap:.3rem" id="bookingsList">
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-train" style="color:#1a73e8;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 9 (Wed) — Train to Southampton</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Direct Express @ <b>09:05</b> London Waterloo → Southampton Central (1 hr 17 min). Book first class for comfort.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-link"></i> <a href="https://www.southwesternrailway.com" target="_blank" rel="noopener" style="color:var(--p)">South Western Railway</a> or <a href="https://www.thetrainline.com" target="_blank" rel="noopener" style="color:var(--p)">Trainline</a></p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-chess-rook" style="color:#e37400;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 8 (Tue) — Tower of London</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Open 10:00–17:30, last entry 16:30. Pre-book timed entry tickets. Crown Jewels, Beefeaters tour.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-link"></i> <a href="https://www.hrp.org.uk/tower-of-london/" target="_blank" rel="noopener" style="color:var(--p)">Historic Royal Palaces — Tower of London</a></p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-church" style="color:#6a1b9a;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 8 (Tue) — St. Paul's Cathedral</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Open 08:30–16:30, last entry 16:00. Pre-book sightseeing admission. Skip dome climb for seniors — ramps not steps.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-link"></i> <a href="https://www.stpauls.co.uk/visits" target="_blank" rel="noopener" style="color:var(--p)">St Paul's Cathedral — Visits</a></p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-utensils" style="color:#c62828;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 6 (Sun) — Dinner TBD</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">First night dinner near Tower Bridge area. Choose a restaurant and reserve for 5 pax — see Critic's Pick for suggestions.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-lightbulb" style="color:var(--w)"></i> Book early — Sunday evenings popular near Tower Hill</p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-utensils" style="color:#c62828;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 7 (Mon) — Dinner @ Hutong, The Shard</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Level 33, The Shard. Northern Chinese cuisine with stunning sunset views over London. Book window table for 5 (with Maggie?).</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-link"></i> <a href="https://www.hutong.co.uk" target="_blank" rel="noopener" style="color:var(--p)">Hutong — The Shard</a></p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-utensils" style="color:#c62828;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 8 (Tue) — Pre-Cruise Dinner TBD</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Last London dinner before boarding cruise next morning. Choose a special venue for farewell meal — 5 pax.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-lightbulb" style="color:var(--w)"></i> Book central location near hotel for easy return — early start Sep 9</p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-train" style="color:#1a73e8;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 18 (Fri) — Train to London Waterloo</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Direct Express @ <b>10:00</b> Southampton Central → London Waterloo (1 hr 20 min). Book first class — returning with cruise luggage.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-link"></i> <a href="https://www.southwesternrailway.com" target="_blank" rel="noopener" style="color:var(--p)">South Western Railway</a> or <a href="https://www.thetrainline.com" target="_blank" rel="noopener" style="color:var(--p)">Trainline</a></p>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:flex-start;gap:.4rem;padding:.45rem .5rem;background:#fff;border:1px solid #e0e0e0;border-left:4px solid #ea4335;border-radius:var(--r2)">
+      <div style="flex-shrink:0;width:2.2rem;text-align:center"><i class="fas fa-mug-hot" style="color:#e37400;font-size:.9rem"></i></div>
+      <div style="flex:1;min-width:0">
+        <div style="display:flex;align-items:center;gap:.25rem;flex-wrap:wrap;margin-bottom:.1rem">
+          <span style="font-size:.66rem;font-weight:700;color:#fff;background:#ea4335;padding:.08rem .3rem;border-radius:3px">BOOK</span>
+          <span style="font-size:.72rem;font-weight:700">Sep 19 (Sat) — Afternoon Tea @ The Georgian, Harrods</span>
+        </div>
+        <p style="font-size:.72rem;color:var(--t2);margin:0">Open 11:30–21:00. Allow 2 hours. Reserve for 5 pax around <b>15:15</b>. Elegant traditional afternoon tea — iconic Harrods experience.</p>
+        <p style="font-size:.66rem;color:var(--t3);margin:.1rem 0 0"><i class="fas fa-link"></i> <a href="https://www.harrods.com/en-gb/restaurants/the-georgian" target="_blank" rel="noopener" style="color:var(--p)">Harrods — The Georgian</a></p>
+      </div>
+    </div>
+
+  </div>
+  <p style="font-size:.66rem;color:var(--t3);margin-top:.35rem;display:flex;align-items:center;gap:.2rem"><i class="fas fa-info-circle"></i> Items match red-bordered cells in the trip planning spreadsheet. Book well in advance — popular London venues fill up quickly.</p>
+</div>
+
 <div style="text-align:center;margin:.7rem 0;display:flex;justify-content:center;gap:.4rem;flex-wrap:wrap" class="np"><button class="bp blg" onclick="plan()"><i class="fas fa-magic"></i> Generate Full Itinerary</button> <button class="blg" style="background:#d93025;color:#fff;border:none;border-radius:var(--r2);padding:.6rem 1.5rem;font-size:.92rem;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:.35rem" onclick="xPDF()"><i class="fas fa-file-pdf"></i> Download PDF</button> <button class="blg" style="background:#0277bd;color:#fff;border:none;border-radius:var(--r2);padding:.6rem 1.5rem;font-size:.92rem;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:.35rem" onclick="saveHTML()"><i class="fas fa-save"></i> Save HTML</button></div>
 </div>
 <!-- ITINERARY -->
@@ -867,38 +975,50 @@ dining:[
 const DAYS=[
 {d:'2026-09-05',label:'BA Flight Day',city:'Vancouver → London',hdr:'flight',items:[
 {time:'14:00',type:'activity',title:'Depart home Vancouver',desc:'Final packing, head to YVR.',icon:'fa-suitcase'},
-{time:'15:15',type:'activity',title:'Arrive YVR Airport',desc:'British Airways check-in. Request wheelchair for elderly.',icon:'fa-plane-departure',addr:'3211 Grant McConachie Way, Richmond, BC V7B 0A4',lat:49.1967,lon:-123.1815},
+{time:'14:15',type:'activity',title:'Arrive YVR Airport',desc:'British Airways check-in. Request wheelchair for elderly.',icon:'fa-plane-departure',addr:'3211 Grant McConachie Way, Richmond, BC V7B 0A4',lat:49.1967,lon:-123.1815},
 {time:'17:45',type:'flight',title:'✈ BA 86 — YVR → LHR',desc:'British Airways · Depart 5:45 PM · ~9h30m · Arrive Sep 6 ~11:15 AM',icon:'fa-plane',addr:'3211 Grant McConachie Way, Richmond, BC V7B 0A4',lat:49.1967,lon:-123.1815}]},
 {d:'2026-09-06',label:'Arrive London',city:'London',hdr:'london',items:[
-{time:'11:15',type:'flight',title:'Arrive LHR',desc:'British Airways. Immigration, baggage. Heathrow Express to Paddington.',icon:'fa-plane-arrival',addr:'Longford, Hounslow TW6 1AP, UK',lat:51.47,lon:-0.4543},
-{time:'13:00',type:'hotel',title:'Check in: Hub by Premier Inn Tower',desc:'3 nights (Sep 6–9). Rest after flight.',icon:'fa-bed',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
-{time:'13:45',type:'dining',title:'Late Lunch near Tower',desc:'Local pub or café.',icon:'fa-utensils',addr:'Near Tower Hill, London EC3N',lat:51.5101,lon:-0.0763},
-{time:'15:30',type:'rest',title:'Afternoon Rest',desc:'Jet lag recovery. Essential for elderly.',icon:'fa-couch',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
+{time:'11:15',type:'flight',title:'Arrive LHR',desc:'British Airways BA 86. Immigration, baggage collection.',icon:'fa-plane-arrival',addr:'Longford, Hounslow TW6 1AP, UK',lat:51.47,lon:-0.4543},
+{time:'12:15',type:'activity',title:'Uber to Hub by Premier Inn Tower Bridge',desc:'1–2 hrs depending on traffic.',icon:'fa-taxi',addr:'Heathrow to Tower Bridge area',lat:51.47,lon:-0.4543},
+{time:'13:45',type:'activity',title:'Leave Luggage with Hotel',desc:'Drop bags at reception before check-in.',icon:'fa-suitcase',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
+{time:'14:00',type:'dining',title:'Late Lunch near Hotel',desc:'Local pub or café near Tower.',icon:'fa-utensils',addr:'Near Tower Hill, London EC3N',lat:51.5101,lon:-0.0763},
+{time:'15:00',type:'hotel',title:'Check in: Hub by Premier Inn Tower Bridge',desc:'3 nights (Sep 6–9). Ref: MAB8411609.',icon:'fa-bed',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
+{time:'15:30',type:'rest',title:'Afternoon Rest — Jet Lag Recovery',desc:'Essential for elderly. Take it easy.',icon:'fa-couch',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
 {time:'17:30',type:'activity',title:'Tower Bridge & South Bank Walk',desc:'Short accessible Thames walk.',icon:'fa-walking',addr:'Tower Bridge Rd, London SE1 2UP',lat:51.5055,lon:-0.0754},
-{time:'19:00',type:'dining',title:'Dinner',desc:"See Critic's Pick.",icon:'fa-utensils',addr:'Near Tower of London, London EC3N',lat:51.5101,lon:-0.076}]},
-{d:'2026-09-07',label:'London Sightseeing',city:'London',hdr:'london',items:[
-{time:'08:00',type:'dining',title:'Breakfast at Hotel',desc:'',icon:'fa-utensils',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
-{time:'10:00',type:'activity',title:'Tower of London',desc:'Crown Jewels, Beefeaters. 2-3 hrs.',icon:'fa-chess-rook',addr:"St Katharine's & Wapping, London EC3N 4AB",lat:51.5081,lon:-0.0759},
-{time:'13:00',type:'dining',title:'Lunch — Borough Market',desc:'Incredible food stalls. 10 min walk.',icon:'fa-utensils',addr:'8 Southwark St, London SE1 1TL',lat:51.5055,lon:-0.091},
-{time:'14:30',type:'rest',title:'Afternoon Rest',desc:'Hotel or café.',icon:'fa-couch',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
-{time:'16:00',type:'dining',title:'Afternoon Tea',desc:"Classic English tea — see Critic's Pick.",icon:'fa-mug-hot',addr:'Fortnum & Mason, 181 Piccadilly, London W1A 1ER',lat:51.5088,lon:-0.1369},
-{time:'18:30',type:'activity',title:'Thames Cruise or Walk',desc:'Sunset views.',icon:'fa-ship',addr:'Embankment Pier, Victoria Embankment, London WC2N 6NU',lat:51.5022,lon:-0.119},
-{time:'19:30',type:'dining',title:'Dinner',desc:'Try Dishoom or Rules.',icon:'fa-utensils',addr:"Dishoom: 5 Stable St N1C 4AB · Rules: 35 Maiden Ln WC2E 7LB",lat:51.5347,lon:-0.1246}]},
-{d:'2026-09-08',label:'London Sightseeing',city:'London',hdr:'london',items:[
-{time:'08:00',type:'dining',title:'Breakfast',desc:'',icon:'fa-utensils',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
-{time:'10:00',type:'activity',title:'Westminster Abbey, Parliament, Big Ben',desc:'Accessible areas.',icon:'fa-landmark',addr:'20 Deans Yd, London SW1P 3PA',lat:51.4993,lon:-0.1273},
-{time:'12:30',type:'dining',title:'Lunch near Westminster',desc:'',icon:'fa-utensils',addr:'Westminster, London SW1A',lat:51.4993,lon:-0.1273},
-{time:'14:00',type:'activity',title:"Buckingham Palace & St James's Park",desc:'Changing of the Guard.',icon:'fa-crown',addr:'Westminster, London SW1A 1AA',lat:51.5014,lon:-0.1419},
-{time:'15:30',type:'rest',title:'Rest at Hotel',desc:"Before tomorrow's cruise travel.",icon:'fa-couch',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
-{time:'17:00',type:'activity',title:'National Gallery or British Museum',desc:'Both free. Pick one.',icon:'fa-palette',addr:'National Gallery: Trafalgar Sq WC2N 5DN · British Museum: Great Russell St WC1B 3DG',lat:51.5089,lon:-0.1283},
-{time:'19:00',type:'dining',title:'Special Pre-Cruise Dinner',desc:'Last London dinner!',icon:'fa-utensils',addr:"Hawksmoor: 11 Langley St WC2H 9JG · The Ivy: 1-5 West St WC2H 9NQ",lat:51.5133,lon:-0.1269},
-{time:'21:00',type:'activity',title:'Pack for Cruise',desc:'Bags ready for morning.',icon:'fa-suitcase-rolling',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763}]},
+{time:'19:00',type:'dining',title:'Dinner TBD',desc:"See Critic's Pick.",icon:'fa-utensils',addr:'Near Tower of London, London EC3N',lat:51.5101,lon:-0.076},
+{time:'21:15',type:'hotel',title:'Back to Hotel to Rest',desc:'Early night after long travel day.',icon:'fa-bed',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763}]},
+{d:'2026-09-07',label:'London — Westminster & Shard',city:'London',hdr:'london',items:[
+{time:'08:00',type:'dining',title:'Breakfast at Hotel',desc:'',icon:'fa-utensils',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
+{time:'09:15',type:'activity',title:'Uber to Queen Victoria Memorial',desc:'20–40 mins depending on traffic.',icon:'fa-taxi',addr:'Queen Victoria Memorial, The Mall, London SW1A 1QH',lat:51.5018,lon:-0.1405},
+{time:'10:00',type:'activity',title:'Arrive Queen Victoria Memorial',desc:'Grand marble monument in front of Buckingham Palace.',icon:'fa-landmark',addr:'Queen Victoria Memorial, The Mall, London SW1A 1QH',lat:51.5018,lon:-0.1405},
+{time:'11:00',type:'activity',title:'Changing of the Guard Ceremony',desc:'Iconic military ceremony at Buckingham Palace. Arrive early for a good spot.',icon:'fa-crown',addr:'Buckingham Palace, London SW1A 1AA',lat:51.5014,lon:-0.1419},
+{time:'12:00',type:'dining',title:'Lunch near Westminster',desc:'',icon:'fa-utensils',addr:'Westminster, London SW1A',lat:51.4993,lon:-0.1273},
+{time:'13:00',type:'activity',title:'Westminster Abbey, Parliament, Big Ben',desc:'Walk around Westminster Abbey exterior, Houses of Parliament, and Big Ben.',icon:'fa-landmark',addr:'20 Deans Yd, London SW1P 3PA',lat:51.4993,lon:-0.1273},
+{time:'14:15',type:'activity',title:'Uber to British Museum',desc:'15–30 mins.',icon:'fa-taxi',addr:'Great Russell St, London WC1B 3DG',lat:51.5194,lon:-0.127},
+{time:'14:45',type:'activity',title:'British Museum',desc:'Free entry. Open 10:00–17:00, last entry 16:45. World-class collection.',icon:'fa-palette',addr:'Great Russell St, London WC1B 3DG',lat:51.5194,lon:-0.127},
+{time:'17:00',type:'activity',title:'Uber to the Shard',desc:'20–45 mins.',icon:'fa-taxi',addr:'32 London Bridge St, London SE1 9SG',lat:51.5045,lon:-0.0865},
+{time:'18:00',type:'dining',title:'Dinner @ Hutong — Watch Sunset',desc:'Stunning 33rd-floor views of London. Northern Chinese cuisine. With Maggie?',icon:'fa-utensils',addr:'Level 33, The Shard, 31 St Thomas St, London SE1 9RY',lat:51.5045,lon:-0.0865},
+{time:'21:15',type:'hotel',title:'Back to Hotel to Rest',desc:'',icon:'fa-bed',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763}]},
+{d:'2026-09-08',label:'London — Tower & Thames',city:'London',hdr:'london',items:[
+{time:'08:00',type:'dining',title:'Breakfast around Hotel',desc:'',icon:'fa-utensils',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
+{time:'10:00',type:'activity',title:'Tower of London',desc:'Crown Jewels, Beefeaters. Open 10:00–17:30, last entry 16:30. 2–3 hrs.',icon:'fa-chess-rook',addr:"St Katharine's & Wapping, London EC3N 4AB",lat:51.5081,lon:-0.0759},
+{time:'12:45',type:'activity',title:'Walk to Borough Market',desc:'10 min walk across Tower Bridge.',icon:'fa-walking',addr:'Borough Market, 8 Southwark St, London SE1 1TL',lat:51.5055,lon:-0.091},
+{time:'13:00',type:'dining',title:'Lunch — Borough Market',desc:'Incredible food stalls. Artisan food, street food, fresh produce.',icon:'fa-utensils',addr:'8 Southwark St, London SE1 1TL',lat:51.5055,lon:-0.091},
+{time:'14:30',type:'activity',title:'Uber to St. Paul\'s Cathedral',desc:'10–20 mins.',icon:'fa-taxi',addr:"St Paul's Cathedral, London EC4M 8AD",lat:51.5138,lon:-0.0984},
+{time:'15:00',type:'activity',title:'St. Paul\'s Cathedral',desc:'Wren\'s masterpiece. Open 08:30–16:30, last entry 16:00. Skip the dome climb for seniors.',icon:'fa-church',addr:"St Paul's Churchyard, London EC4M 8AD",lat:51.5138,lon:-0.0984},
+{time:'16:45',type:'activity',title:'Walk to Blackfriars Pier',desc:'10 min riverside walk.',icon:'fa-walking',addr:'Blackfriars Pier, Victoria Embankment, London EC4V 3QH',lat:51.5095,lon:-0.1046},
+{time:'17:00',type:'activity',title:'Thames Cruise & Walk — Rest & Snacks',desc:'Scenic river cruise or riverside stroll. Grab evening snacks.',icon:'fa-ship',addr:'Blackfriars Pier, Victoria Embankment, London EC4V 3QH',lat:51.5095,lon:-0.1046},
+{time:'19:00',type:'dining',title:'Pre-Cruise Dinner TBD',desc:'Last London dinner before boarding tomorrow!',icon:'fa-utensils',addr:'Central London',lat:51.5133,lon:-0.1269},
+{time:'21:15',type:'activity',title:'Back to Hotel — Pack & Rest',desc:'Bags ready for morning. Early start tomorrow.',icon:'fa-suitcase-rolling',addr:'Hub by Premier Inn, 7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763}]},
 {d:'2026-09-09',label:'Board Cruise!',city:'London → Southampton',hdr:'cruise',items:[
-{time:'07:30',type:'dining',title:'Breakfast & Check Out Hotel',desc:'Hub by Premier Inn Tower.',icon:'fa-utensils',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
-{time:'09:00',type:'activity',title:'Train: Waterloo → Southampton',desc:'~1.5 hrs. First class for comfort.',icon:'fa-train',addr:'London Waterloo Station, Waterloo, London SE1 8SW',lat:51.5031,lon:-0.1132},
-{time:'11:00',type:'activity',title:'Southampton Cruise Terminal',desc:'Taxi from station ~10 min.',icon:'fa-map-marker-alt',addr:'Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom',lat:50.9001,lon:-1.4141},
-{time:'11:30',type:'cruise',title:'🚢 Embarkation — Liberty of the Seas',desc:'Priority boarding for elderly.',icon:'fa-ship',addr:'Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom',lat:50.9001,lon:-1.4141},
-{time:'13:00',type:'dining',title:'Lunch on Board',desc:'Windjammer buffet.',icon:'fa-utensils',addr:'Liberty of the Seas, Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom',lat:50.9001,lon:-1.4141},
+{time:'07:00',type:'dining',title:'Breakfast & Check Out Hotel',desc:'Hub by Premier Inn Tower Bridge.',icon:'fa-utensils',addr:'7 Pepys St, London EC3N 4AF',lat:51.5101,lon:-0.0763},
+{time:'07:45',type:'activity',title:'Uber to Waterloo Station',desc:'15–40 mins depending on traffic.',icon:'fa-taxi',addr:'London Waterloo Station, Waterloo, London SE1 8SW',lat:51.5031,lon:-0.1132},
+{time:'08:30',type:'activity',title:'Arrive Waterloo Station',desc:'Find platform for Southampton train.',icon:'fa-map-marker-alt',addr:'London Waterloo Station, Waterloo, London SE1 8SW',lat:51.5031,lon:-0.1132},
+{time:'09:05',type:'activity',title:'Direct Express Train to Southampton',desc:'Departs 09:05. Journey 1 hr 17 min. First class for comfort.',icon:'fa-train',addr:'London Waterloo Station, Waterloo, London SE1 8SW',lat:51.5031,lon:-0.1132},
+{time:'10:30',type:'activity',title:'Taxi to Cruise Terminal',desc:'~10 min from Southampton Central.',icon:'fa-taxi',addr:'Southampton Central Station, Blechynden Terrace, Southampton SO15 1GW',lat:50.9094,lon:-1.4045},
+{time:'10:45',type:'activity',title:'Arrive Cruise Terminal',desc:'',icon:'fa-map-marker-alt',addr:'Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom',lat:50.9001,lon:-1.4141},
+{time:'11:30',type:'cruise',title:'🚢 Embarkation — Liberty of the Seas',desc:'Priority boarding for elderly.',icon:'fa-ship',addr:'Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom',lat:50.9001,lon:-1.4141},
+{time:'13:00',type:'dining',title:'Lunch on Board',desc:'Windjammer buffet.',icon:'fa-utensils',addr:'Liberty of the Seas, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom',lat:50.9001,lon:-1.4141},
 {time:'15:00',type:'cruise',title:'Safety Muster Drill',desc:'Mandatory. Then explore ship.',icon:'fa-life-ring',addr:'Liberty of the Seas, Southampton SO15',lat:50.9001,lon:-1.4141},
 {time:'16:30',type:'cruise',title:'🚢 SET SAIL — Depart Southampton',desc:'Watch from pool deck!',icon:'fa-anchor',addr:'Southampton Water, Southampton SO14',lat:50.9097,lon:-1.4044},
 {time:'18:30',type:'dining',title:'First Dinner',desc:'Main Dining Room.',icon:'fa-utensils'},
@@ -954,31 +1074,39 @@ const DAYS=[
 {d:'2026-09-17',label:'Cruising — Bay of Biscay',city:'🌊 Bay of Biscay',hdr:'cruise',items:[
 {time:'08:00',type:'dining',title:'Breakfast',desc:'',icon:'fa-utensils'},{time:'10:00',type:'activity',title:'Final Ship Activities',desc:'',icon:'fa-swimmer'},{time:'12:00',type:'dining',title:'Lunch',desc:'',icon:'fa-utensils'},{time:'14:00',type:'activity',title:'Pack Luggage',desc:'Bags out by 10 PM.',icon:'fa-suitcase-rolling'},{time:'18:30',type:'dining',title:'Farewell Gala Dinner',desc:'Dress up!',icon:'fa-utensils'},{time:'20:30',type:'activity',title:'Final Show',desc:'Early bed.',icon:'fa-theater-masks'}]},
 {d:'2026-09-18',label:'Disembark + Concert!',city:'Southampton → Wembley → 🎻',hdr:'concert',items:[
-{time:'06:00',type:'cruise',title:'🚢 Arrive Southampton',desc:'',icon:'fa-anchor',addr:'Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom',lat:50.9001,lon:-1.4141},
-{time:'07:30',type:'dining',title:'Ship Breakfast',desc:'',icon:'fa-utensils',addr:'Liberty of the Seas, Southampton SO15',lat:50.9001,lon:-1.4141},
-{time:'08:30',type:'cruise',title:'Disembark',desc:'Priority elderly. Wheelchair.',icon:'fa-door-open',addr:'Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom',lat:50.9001,lon:-1.4141},
-{time:'09:30',type:'activity',title:'Train to London Waterloo',desc:'~1.5 hrs → Jubilee to Wembley.',icon:'fa-train',addr:'Southampton Central Station, Blechynden Terrace, Southampton SO15 1GW',lat:50.9094,lon:-1.4045},
-{time:'11:30',type:'hotel',title:'Check in: Premier Inn Wembley',desc:'2 nights (Sep 18–20). Rest!',icon:'fa-bed',addr:'Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
-{time:'13:00',type:'dining',title:'Lunch near Wembley',desc:'',icon:'fa-utensils',addr:'Wembley Park, Wembley HA9',lat:51.556,lon:-0.2795},
-{time:'15:00',type:'rest',title:'Rest Before Concert',desc:'Important!',icon:'fa-couch',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
-{time:'17:30',type:'dining',title:'Early Dinner',desc:'Light meal.',icon:'fa-utensils',addr:'Wembley Park, Wembley HA9',lat:51.556,lon:-0.2795},
-{time:'19:00',type:'activity',title:'Walk to OVO Arena',desc:'5-10 min.',icon:'fa-walking',addr:'OVO Arena Wembley, Arena Square, Wembley HA9 0AA',lat:51.5586,lon:-0.2817},
+{time:'07:00',type:'cruise',title:'🚢 Cruise — Final Morning',desc:'',icon:'fa-anchor',addr:'Liberty of the Seas, Southampton SO15',lat:50.9001,lon:-1.4141},
+{time:'08:30',type:'cruise',title:'Disembark Cruise',desc:'Priority elderly. Wheelchair assistance.',icon:'fa-door-open',addr:'Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom',lat:50.9001,lon:-1.4141},
+{time:'09:15',type:'activity',title:'Taxi to Southampton Station',desc:'~10 mins from cruise terminal.',icon:'fa-taxi',addr:'Southampton Central Station, Blechynden Terrace, Southampton SO15 1GW',lat:50.9094,lon:-1.4045},
+{time:'09:30',type:'activity',title:'Arrive Southampton Station',desc:'Find platform for London train.',icon:'fa-map-marker-alt',addr:'Southampton Central Station, Blechynden Terrace, Southampton SO15 1GW',lat:50.9094,lon:-1.4045},
+{time:'10:00',type:'activity',title:'Direct Express Train to London Waterloo',desc:'Departs 10:00. Journey 1 hr 20 min.',icon:'fa-train',addr:'Southampton Central Station, Blechynden Terrace, Southampton SO15 1GW',lat:50.9094,lon:-1.4045},
+{time:'11:45',type:'activity',title:'Uber to Premier Inn Wembley',desc:'40–75 mins depending on traffic.',icon:'fa-taxi',addr:'London Waterloo to Wembley',lat:51.5031,lon:-0.1132},
+{time:'13:00',type:'activity',title:'Leave Luggage with Hotel',desc:'Drop bags at reception before check-in.',icon:'fa-suitcase',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'13:15',type:'dining',title:'Lunch near Hotel',desc:'',icon:'fa-utensils',addr:'Wembley Park, Wembley HA9',lat:51.556,lon:-0.2795},
+{time:'15:00',type:'hotel',title:'Check in: Premier Inn Wembley',desc:'2 nights (Sep 18–20). Ref: BIN2145918.',icon:'fa-bed',addr:'Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'15:30',type:'rest',title:'Rest Before Concert',desc:'Important! Recover from travel.',icon:'fa-couch',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'17:30',type:'dining',title:'Early Dinner TBD',desc:'Light meal before concert.',icon:'fa-utensils',addr:'Wembley Park, Wembley HA9',lat:51.556,lon:-0.2795},
+{time:'19:00',type:'activity',title:'Walk to OVO Arena',desc:'5–10 min walk.',icon:'fa-walking',addr:'OVO Arena Wembley, Arena Square, Wembley HA9 0AA',lat:51.5586,lon:-0.2817},
 {time:'19:30',type:'concert',title:'🎻 André Rieu — LIVE',desc:'Johann Strauss Orchestra · OVO Arena · 7:30–10:30 PM',icon:'fa-music',addr:'OVO Arena Wembley, Arena Square, Wembley HA9 0AA',lat:51.5586,lon:-0.2817},
-{time:'22:45',type:'hotel',title:'Return to Hotel',desc:'Short walk.',icon:'fa-bed',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795}]},
-{d:'2026-09-19',label:'Final London Day',city:'London',hdr:'london',items:[
-{time:'08:30',type:'dining',title:'Breakfast',desc:'',icon:'fa-utensils',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
-{time:'10:00',type:'activity',title:'Last Sightseeing',desc:'Kew, Oxford St, or revisits.',icon:'fa-binoculars',addr:'Kew Gardens: Royal Botanic Gardens, Richmond TW9 3AE',lat:51.4787,lon:-0.2956},
-{time:'12:30',type:'dining',title:'Farewell Lunch',desc:'',icon:'fa-utensils',addr:'Central London / Kew area',lat:51.4787,lon:-0.2956},
-{time:'14:30',type:'activity',title:'Shopping / Museum',desc:'Harrods, Covent Garden.',icon:'fa-shopping-bag',addr:'Harrods: 87-135 Brompton Rd, London SW1X 7XL',lat:51.4994,lon:-0.1633},
-{time:'16:30',type:'dining',title:'Last Afternoon Tea',desc:'Memorable!',icon:'fa-mug-hot',addr:'The Wolseley, 160 Piccadilly, London W1J 9EB',lat:51.5075,lon:-0.1416},
-{time:'19:00',type:'dining',title:'Farewell Dinner',desc:"See Critic's Pick.",icon:'fa-utensils',addr:"Simpson's-in-the-Strand, 100 Strand, London WC2R 0EW",lat:51.5108,lon:-0.1179},
-{time:'21:00',type:'activity',title:'Pack for Home',desc:'',icon:'fa-suitcase-rolling',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795}]},
+{time:'22:45',type:'hotel',title:'Back to Hotel to Rest',desc:'',icon:'fa-bed',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795}]},
+{d:'2026-09-19',label:'Final London Day — Shopping & Tea',city:'London',hdr:'london',items:[
+{time:'08:30',type:'dining',title:'Breakfast at Hotel',desc:'',icon:'fa-utensils',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'09:30',type:'activity',title:'Uber to Hyde Park',desc:'25–60 mins depending on traffic.',icon:'fa-taxi',addr:'Hyde Park, London W2 2UH',lat:51.5073,lon:-0.1657},
+{time:'10:30',type:'activity',title:'Hyde Park',desc:'Stroll through the park. Serpentine lake, Italian Gardens, Diana Memorial Fountain.',icon:'fa-tree',addr:'Hyde Park, London W2 2UH',lat:51.5073,lon:-0.1657},
+{time:'11:45',type:'dining',title:'Light Lunch inside or around Hyde Park',desc:'Café at the Serpentine or nearby.',icon:'fa-utensils',addr:'The Serpentine Bar & Kitchen, Hyde Park, London W2 2UH',lat:51.5053,lon:-0.1657},
+{time:'12:45',type:'activity',title:'Walk to Fortnum & Mason',desc:'~20 min walk through Green Park.',icon:'fa-walking',addr:'181 Piccadilly, St. James\'s, London W1A 1ER',lat:51.5088,lon:-0.1369},
+{time:'13:15',type:'activity',title:'Shopping @ Fortnum & Mason',desc:'Iconic department store. Teas, biscuits, hampers, luxury gifts.',icon:'fa-shopping-bag',addr:'181 Piccadilly, St. James\'s, London W1A 1ER',lat:51.5088,lon:-0.1369},
+{time:'14:45',type:'activity',title:'Uber to Harrods',desc:'~15 mins.',icon:'fa-taxi',addr:'87-135 Brompton Rd, Knightsbridge, London SW1X 7XL',lat:51.4994,lon:-0.1633},
+{time:'15:15',type:'dining',title:'Afternoon Tea — The Georgian @ Harrods',desc:'Open 11:30–21:00. Allow 2 hours. Elegant setting, traditional service.',icon:'fa-mug-hot',addr:'Harrods, 87-135 Brompton Rd, London SW1X 7XL',lat:51.4994,lon:-0.1633},
+{time:'17:15',type:'activity',title:'Shopping @ Harrods & Fortnum & Mason',desc:'Harrods closes 21:00. Return to Fortnum & Mason if needed (closes 20:00).',icon:'fa-shopping-bag',addr:'Harrods, 87-135 Brompton Rd, London SW1X 7XL',lat:51.4994,lon:-0.1633},
+{time:'20:00',type:'dining',title:'Farewell Dinner TBD',desc:'Final London dinner!',icon:'fa-utensils',addr:'Central London',lat:51.5088,lon:-0.1369},
+{time:'21:45',type:'activity',title:'Uber to Wembley Hotel',desc:'30–60 mins.',icon:'fa-taxi',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'22:45',type:'hotel',title:'Back to Hotel — Pack & Rest',desc:'Final night. Pack for flight home.',icon:'fa-bed',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795}]},
 {d:'2026-09-20',label:'Return — British Airways',city:'London → Vancouver',hdr:'flight',items:[
-{time:'08:00',type:'dining',title:'Breakfast',desc:'',icon:'fa-utensils',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
-{time:'09:30',type:'hotel',title:'Check Out',desc:'Premier Inn Wembley.',icon:'fa-suitcase',addr:'Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
-{time:'12:00',type:'dining',title:'Light Lunch',desc:'',icon:'fa-utensils',addr:'Heathrow Terminal 5, Longford TW6 2GA',lat:51.4775,lon:-0.4614},
-{time:'13:30',type:'activity',title:'Travel to Heathrow',desc:'Jubilee→Piccadilly or taxi.',icon:'fa-taxi',addr:'London Heathrow Airport, Longford TW6 1AP',lat:51.47,lon:-0.4543},
-{time:'14:45',type:'activity',title:'LHR — BA Check-in T5',desc:'Wheelchair assistance.',icon:'fa-plane-departure',addr:'Heathrow Terminal 5, Longford, Hounslow TW6 2GA',lat:51.4775,lon:-0.4614},
+{time:'09:00',type:'dining',title:'Late Breakfast around Hotel',desc:'No rush this morning.',icon:'fa-utensils',addr:'Premier Inn, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'10:00',type:'activity',title:'Walk around Wembley Area or Pack',desc:'Last stroll or finish packing at hotel.',icon:'fa-walking',addr:'Wembley Park, Engineers Way, Wembley HA9 0EQ',lat:51.556,lon:-0.2795},
+{time:'11:45',type:'dining',title:'Lunch around Hotel',desc:'',icon:'fa-utensils',addr:'Wembley Park, Wembley HA9',lat:51.556,lon:-0.2795},
+{time:'12:45',type:'activity',title:'Uber to LHR Airport',desc:'30–60 mins depending on traffic.',icon:'fa-taxi',addr:'London Heathrow Airport, Longford TW6 1AP',lat:51.47,lon:-0.4543},
+{time:'13:45',type:'activity',title:'Arrive LHR Airport',desc:'Check in, wheelchair assistance, security, duty free.',icon:'fa-plane-departure',addr:'Heathrow Terminal 5, Longford, Hounslow TW6 2GA',lat:51.4775,lon:-0.4614},
 {time:'17:15',type:'flight',title:'✈ BA 85 — LHR → YVR',desc:'British Airways · Depart 5:15 PM · ~9h30m · Arrive ~6:45 PM',icon:'fa-plane',addr:'Heathrow Terminal 5, Longford, Hounslow TW6 2GA',lat:51.4775,lon:-0.4614},
 {time:'18:45',type:'activity',title:'Arrive Vancouver 🏠',desc:'Welcome home!',icon:'fa-home',addr:'3211 Grant McConachie Way, Richmond, BC V7B 0A4',lat:49.1967,lon:-123.1815}]}
 ];
@@ -1192,8 +1320,8 @@ function drawMap(){
       name:'Hub by Premier Inn London Tower Bridge',addr:'7 Pepys St, London EC3N 4AF',
       info:'🏨 <b>Hub by Premier Inn Tower</b><br><span style="color:#666;font-size:.85em">7 Pepys St, London EC3N 4AF<br>Check-in: <b>Sep 6</b> · Check-out: <b>Sep 9</b> · 3 nights</span>'},
     {loc:L_.SOTON,bg:'#0277bd',icon:'fa-ship',sz:30,border:'#b3e5fc',
-      name:'Southampton Cruise Terminal',addr:'Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom',
-      info:'🚢 <b>Southampton Cruise Terminal</b><br><span style="color:#666;font-size:.85em">Berth 101, Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom, United Kingdom<br>Embark: <b>Sep 9 · 4:30 PM</b> · Disembark: <b>Sep 18 · 6:00 AM</b></span>'},
+      name:'Southampton Cruise Terminal',addr:'Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom',
+      info:'🚢 <b>Southampton Cruise Terminal</b><br><span style="color:#666;font-size:.85em">Berth 101, Herbert Walker Ave, Southampton SO15 1HJ, United Kingdom<br>Embark: <b>Sep 9 · 4:30 PM</b> · Disembark: <b>Sep 18 · 6:00 AM</b></span>'},
     {loc:L_.VIGO,bg:'#e37400',lbl:'VIGO',sz:30,border:'#fff',
       name:'Vigo Cruise Port',addr:'Terminal de Cruceiros de Vigo, 36208 Vigo, Spain',
       info:'🇪🇸 <b>Vigo, Spain</b><br><span style="color:#666;font-size:.85em">Terminal de Cruceiros · <b>Sep 11</b> · Arrive 8:30 AM · Depart 5:30 PM<br>Old Town · Seafood · Castro Fortress</span>'},
